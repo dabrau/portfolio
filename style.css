@@ -6,29 +6,50 @@ body {
 }
 
 header {
-  background-color: green;
-  display: flex;
-  flex-direction: row;
+  background-color: black;
+  color: white;
+  font-family: helvetica;
   height: 50px;
+  display: flex;
 }
 
 header h4 {
-  align-self: flex-start;
   margin: 0px;
+  text-align: center;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header button {
   display: none;
 }
 
-header ul {
-  align-self: flex-end;
-  display: inline-flex;
-
+header nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  margin-right: 10px;
 }
+
+header nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  border-color: white;
+  padding: 10px;
+}
+
+header nav a:hover {
+  background-color: white;
+  color: black;
+}
+
 
 .container {
   background-color: red;
   box-sizing: border-box;
-  width:1200px;
+  max-width:1200px;
 }
