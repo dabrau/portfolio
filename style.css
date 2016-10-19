@@ -1,55 +1,66 @@
-body {
-  align-items: stretch;
-  display: flex;
-  justify-content: center;
-  margin: 0px;
+html,body {
+    margin:0;
+    padding:0;
 }
 
-header {
-  background-color: black;
+.fixed-nav-container {
   color: white;
   font-family: helvetica;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
   height: 50px;
-  display: flex;
+  background-color: black;
+  display: inline-block;
 }
 
-header h4 {
-  margin: 0px;
-  text-align: center;
+.fixed-nav-container h4 {
+  margin: 0px 0px 0px 20px;
   width: 100px;
   display: flex;
+  font-size: 1.2rem;
   justify-content: center;
   align-items: center;
+  height: 50px;
+  float: left;
 }
 
-header button {
-  display: none;
+nav {
+  float: right;
+  margin-right: 20px;
 }
 
-header nav {
+nav ul {
   display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
-  margin-right: 10px;
+  margin: 0px;
+  padding: 0px;
+  
 }
 
-header nav a {
+nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style-type: none;
   border-color: white;
-  padding: 10px;
+  height: 50px;
+  padding: 0px 20px 0px;
 }
 
-header nav a:hover {
+nav ul li:hover {
   background-color: white;
   color: black;
 }
 
-
 .container {
   background-color: red;
+  height: 2000px;
+  margin: 50px 0px 0px;
   box-sizing: border-box;
-  max-width:1200px;
+  width: 100%;
 }
+
+
+
