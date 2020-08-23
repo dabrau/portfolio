@@ -1,34 +1,56 @@
-<!DOCTYPE HTML>
-<meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
-<title>Darrell Abrau's Portfolio</title>
-
-<div class="fixed-nav-container">
-  <h4>D.Abrau</h4>
-  <nav>
-    <ul>
-      <li>About</li>
-      <li>Projects</li>
-      <li>Resume</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
-</div>
-
-<div class="container">
-  <div class="landing page">
-    <div class="title">
-      <h2>Darrell Abrau's</h2>
-      <h1>Portfolio</h1>
-    </div>
-  </div>
-  <div class="page">
-    <div class="content-container">
-      <h3>About</h3>
-      <p>I am a software developer trying my hand at front-end web development. My initial hesistance to front-end development was due to my inability to grok positioning elements relative to each other with CSS. After watching <a target="_blank" href="https://youtu.be/G7EIAgfkhmg">CSS FlexBox Essentials</a>, I decided to get hacking on a portfolio and chipping away at one challenge at a time. I enjoy programming and working specifically with front-end tools is refreshing. The goal of this portfolio is to create a layout with only HTML and CSS. In the near future, I plan to add links and descriptions to personal projects.</p>
-    </div>
-  </div>
-  <div class="page">projects</div>
-  <div class="page">resume</div>
-  <div class="page">contact</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Darrell Abrau's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header class="navigation">
+        <nav class="container">
+            <ul class="navigation-list">
+                <li class="navigation-list__link"><a href="#about">About</a></li>
+                <li class="navigation-list__link"><a href="#projects">Projects</a></li>
+                <li class="navigation-list__link"><a href="#contact">Contact</a></li>
+                <li class="navigation-list__link">Resume</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="hero">
+        <div class="container">
+            <img class="hero__pic" src="at_work_photo.jpg"/>
+            <div class="hero__text">
+                <h1 class="hero__text-name">Darrell Abrau</h1>
+                <p class="hero__text-title">Software Developer</p>
+            </div>
+        </div>
+    </section>
+    <section class="container content" id="about">
+        <h2 class="content__title">About</h2>
+        <div class="row">
+            <img class="about__img" src="Tables-charts-graphs.jpg"/>
+            <p class="about__text">I am a software developer with 4+ years of full stack web development experience. I have a strong interest in front end web development and data visualizations. For personal projects, I pretend to be a designer and data scientist. I aspire to build cool stuff, to learn new things, and to solve challenging problems.</p>
+        </div>
+        <div class="row">
+            <img class="about__img"src="DNA-purple-banner_900px-858x286.png"/>
+            <p class="about__text">In a previous life, I worked as a laboratory technician for 4 years. I have a bachelors in biochemistry and still enjoy learning about biology and general sciencey things. Recently, I have been fortunate enough to work as a developer in the research and biotech domains.</p>
+        </div>
+    </section>
+    <section class="container content" id="projects">
+        <h2 class="content__title">Projects</h2>
+        <div>project containers</div>
+    </section>
+    <section class="container content" id="contact">
+        <h2 class="content__title">Contact</h2>
+        <p>darrellabrau@gmail.com<p>
+    </section>
+</main>
+</body>
+</html>
