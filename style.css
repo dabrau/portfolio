@@ -118,6 +118,17 @@ a:link, a:visited {
 
 .about__img {
   height: 70px;
-  width: auto;
+  width: 100%;
   margin: 0 auto 1.2rem auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+}
+
+.about__img[bg-img="chart"] {
+  background-image: url("images/Tables-charts-graphs.jpg");
+}
+
+.about__img[bg-img=helix] {
+  background-image: url("images/DNA-purple-banner_900px-858x286.png");
 }
