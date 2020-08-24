@@ -21,6 +21,10 @@ body {
   color: var(--fn-color);
 }
 
+ul {
+  list-style-type: none;
+}
+
 a:link, a:visited {
     text-decoration: none;
     color: var(--fn-color);
@@ -47,12 +51,9 @@ a:link, a:visited {
 }
 
 .navigation-list {
-  list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  margin: 0;
   width: 100%;
 }
 
@@ -61,7 +62,6 @@ a:link, a:visited {
   font-size: 1.3rem;
   font-family: var(--fn-titles);
   font-weight: bold;
-  cursor: pointer;
 }
 
 .navigation-list__link:hover {
@@ -131,4 +131,49 @@ a:link, a:visited {
 
 .about__img[bg-img=helix] {
   background-image: url("images/DNA-purple-banner_900px-858x286.png");
+}
+
+#links {
+  background-color: var(--clr-medium-purp);
+}
+
+.external-link {
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  margin-bottom: .5rem;
+  color: var(--clr-dark-purp);
+}
+
+.external-link a {
+  margin: auto 0 auto 0;
+}
+
+.link-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: .4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+}
+
+.link-icon[icon="email"] {
+  background-image: url("images/iconmonstr-email-10.svg");
+}
+
+.link-icon[icon="pdf"] {
+  background-image: url("images/iconmonstr-file-33.svg");
+}
+
+.link-icon[icon="linkedin"] {
+  background-image: url("images/iconmonstr-linkedin-4.svg");
+}
+
+.link-icon[icon="github"] {
+  background-image: url("images/iconmonstr-github-4.svg");
+}
+
+.link-icon[icon="medium"] {
+  background-image: url("images/iconmonstr-medium-4.svg");
 }
