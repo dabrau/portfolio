@@ -155,6 +155,11 @@ a:link, a:visited {
   background-size:contain;
 }
 
+.link-icon:hover {
+  border-radius: 100px;
+  background-color: var( --clr-white);
+}
+
 .link-icon[icon="email"] {
   background-image: url("images/iconmonstr-email-10.svg");
 }
