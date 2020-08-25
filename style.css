@@ -138,21 +138,18 @@ a:link, a:visited {
 }
 
 .external-link {
-  cursor: pointer;
-  z-index: 2;
-  display: flex;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
   color: var(--clr-dark-purp);
 }
 
-.external-link a {
-  margin: auto 0 auto 0;
+.external-link p {
+  text-align: center;
 }
 
 .link-icon {
   height: 30px;
   width: 30px;
-  margin-right: .4rem;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size:contain;
