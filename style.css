@@ -39,6 +39,7 @@ a:link, a:visited {
     flex-wrap: wrap;
     margin-bottom: 1rem;
     align-content: center;
+    justify-content: center;
 }
 
 .navigation {
@@ -132,6 +133,25 @@ a:link, a:visited {
 
 .about__img[bg-img=helix] {
   background-image: url("images/DNA-purple-banner_900px-858x286.png");
+}
+
+@media only screen and (min-width: 720px) {
+  .about__img {
+    width: 35%;
+    margin-right: .4rem;
+    margin-left: .4rem;
+    max-width: 230px;
+  }
+
+  .about__text {
+    width: 60%;
+    max-width: 400px;
+    margin-bottom: .5em;
+  }
+
+  .row + .row {
+    flex-direction: row-reverse;
+  }  
 }
 
 #links {
